@@ -1,3 +1,6 @@
+img {
+  max-width: 100%;
+}
 .card-section {
 }
 .card-section .container {
@@ -7,12 +10,43 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 25px;
 }
+@media only screen and (max-width: 576px) {
+  .card-section .container {
+    overflow: hidden;
+  }
+  .card-section .container .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
 .card-section .container .cards .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   border-radius: 7px;
   padding: 9px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-section .container .cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 7px;
+    padding: 9px;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .card-section .container .cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 7px;
+    padding: 9px;
+    margin: 0px;
+  }
 }
 .card-section .container .cards .card:hover {
   /* border: 2px solid; */
