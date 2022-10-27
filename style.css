@@ -1,0 +1,48 @@
+.card-section {
+}
+.card-section .container {
+}
+.card-section .container .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+}
+.card-section .container .cards .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 7px;
+  padding: 9px;
+}
+.card-section .container .cards .card:hover {
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s;
+}
+.card-section .container .cards .card .card-body {
+  text-align: center;
+}
+.card-section .container .cards .card .card-body .card-title {
+  padding: 0px;
+  margin: 0px;
+  font-size: 27px;
+}
+.card-section .container .cards .card .card-body .card-text {
+  color: #413b3b;
+}
+.card-section .container .cards .card .card-body button {
+  border: none;
+  padding: 9px;
+  border-radius: 7px;
+}
+.card-section .container .cards .card .card-body button:hover {
+  background: #413b3b;
+  transition: 0.3s;
+}
+.card-section .container .cards .card .card-body a {
+  text-decoration: none;
+}
+.card-section .container .cards .card .card-body button:hover a {
+  color: white;
+  transition: 0.3s;
+}
