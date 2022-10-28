@@ -1,6 +1,36 @@
 img {
   max-width: 100%;
 }
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  background: #f6f3f3;
+}
+nav .logo {
+}
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 8px;
+}
+nav ul li a {
+  color: black;
+  font-size: 24px;
+}
+nav ul li a:hover {
+  color: gray;
+}
+
 .card-section {
 }
 .card-section .container {
