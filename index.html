@@ -3,19 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title></title>
   </head>
   <body>
-    <nav>
-      <label class="logo">xyz</label>
-      <ul>
-        <li><a href="#">Porducts</a></li>
-        <li><a href="#">Club</a></li>
-        <li><a href="#">Get in touch</a></li>
-      </ul>
-    </nav>
-    <h1 style="text-align: center">
+    <header class="active">
+      <label class="logo"><a href="#">VIZON</a></label>
+
+      <nav>
+        <ul id="links">
+          <li><a href="#">Porducts</a></li>
+          <li><a href="#">Club</a></li>
+          <li><a href="#">Get in touch</a></li>
+
+          <img
+            src="imges/xmark-solid.svg"
+            class="bars close-bar"
+            onclick="closemenu()"
+            alt="..."
+          />
+        </ul>
+      </nav>
+      <img
+        src="imges/bars-solid.svg"
+        class="bars open-bar"
+        onclick="openmenu()"
+        alt="..."
+      />
+    </header>
+    <h1 style="text-align: center; margin-top: 20px">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </h1>
     <div class="card-section">
@@ -108,5 +131,14 @@
     <h1 style="text-align: center">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </h1>
+    <script>
+      let links = document.getElementById("links");
+      function closemenu() {
+        links.style.right = "-1000px";
+      }
+      function openmenu() {
+        links.style.right = "-49px";
+      }
+    </script>
   </body>
 </html>
